@@ -11,6 +11,6 @@
 
 #### Copy the plist to /Library/LaunchDaemons/
 
-`cp com.swiftforensics.diskblock.plist > /Library/LaunchDaemons/`
+`cp com.swiftforensics.diskblock.plist /Library/LaunchDaemons/`
 
 Do not try this on local machine. The daemon is set to deny all internal disk mounts.
