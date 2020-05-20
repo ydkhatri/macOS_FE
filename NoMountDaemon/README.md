@@ -1,3 +1,5 @@
+This daemon uses the Disk Arbitration framework to block all internal disks from mounting. Disks/Volumes mounted from Disk Utility or diskutil will be blocked. However explicit mounts using `sudo mount ..` will be allowed.
+
 ## To compile and set as service
 
 `clang -Wall -Werror -g -v stop_mounts.m  -lobjc -framework DiskArbitration -framework Foundation -o stop_mount`
@@ -13,4 +15,5 @@
 
 `sudo cp com.swiftforensics.diskblock.plist /Library/LaunchDaemons/`
 
-Do not try this on local machine. The daemon is set to deny all internal disk mounts.
+:warning: Do not try this on local machine. The daemon is set to deny all internal disk mounts.  
+:warning: This method isn't perfect, and there are conditions under which this will fail and disks will be mounted at boot.
