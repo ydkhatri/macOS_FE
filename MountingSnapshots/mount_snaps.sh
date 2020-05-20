@@ -1,4 +1,4 @@
-# (c) MIT License 2020 Yogesh Khatri
+# (c) LGPL v3 License 2020 Yogesh Khatri
 #
 # This script automates the mounting of snapshots of a volume by
 # listing them using tmutil, then creating folders and mounting
